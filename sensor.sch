@@ -1154,11 +1154,11 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="0.711259375" y1="0.556621875" x2="0.569840625" y2="0.698040625" width="0.127" layer="21" curve="-90"/>
 <wire x1="0.569840625" y1="-0.784796875" x2="0.711259375" y2="-0.643378125" width="0.127" layer="21" curve="-90"/>
 <wire x1="-0.671578125" y1="-0.643378125" x2="-0.530159375" y2="-0.784796875" width="0.127" layer="21" curve="-90"/>
-<smd name="P$1" x="-0.720659375" y="0.806621875" dx="1.016" dy="0.762" layer="1" roundness="5" rot="R90"/>
-<smd name="P$3" x="0.760340625" y="0.806621875" dx="1.016" dy="0.762" layer="1" roundness="5" rot="R90"/>
-<smd name="P$6" x="-0.720659375" y="-0.893378125" dx="1.016" dy="0.762" layer="1" roundness="5" rot="R90"/>
-<smd name="P$4" x="0.760340625" y="-0.893378125" dx="1.016" dy="0.762" layer="1" roundness="5" rot="R90"/>
-<circle x="-1.497659375" y="0.756621875" radius="0.111803125" width="0.127" layer="21"/>
+<smd name="P$3" x="-0.720659375" y="0.806621875" dx="1.016" dy="0.762" layer="1" roundness="5" rot="R90"/>
+<smd name="P$1" x="0.760340625" y="0.806621875" dx="1.016" dy="0.762" layer="1" roundness="5" rot="R90"/>
+<smd name="P$4" x="-0.720659375" y="-0.893378125" dx="1.016" dy="0.762" layer="1" roundness="5" rot="R90"/>
+<smd name="P$6" x="0.760340625" y="-0.893378125" dx="1.016" dy="0.762" layer="1" roundness="5" rot="R90"/>
+<circle x="1.502340625" y="0.656621875" radius="0.111803125" width="0.127" layer="21"/>
 <smd name="P$2" x="0.019840625" y="0.756621875" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
 <smd name="P$5" x="0.019840625" y="-0.843378125" dx="0.3048" dy="0.1524" layer="1" rot="R90"/>
 </package>
@@ -1283,7 +1283,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="GND1" gate="1" x="-7.62" y="-22.86"/>
 <instance part="SUPPLY1" gate="1" x="53.34" y="55.88"/>
 <instance part="SCHOTTKEY" gate="G$1" x="48.26" y="45.72"/>
-<instance part="APDS1" gate="G$1" x="-38.1" y="17.78" rot="R90"/>
+<instance part="APDS1" gate="G$1" x="-43.18" y="12.7" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -1313,14 +1313,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="VDD" class="0">
 <segment>
-<wire x1="-43.18" y1="12.7" x2="-45.72" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="12.7" x2="-45.72" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="20.32" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="7.62" x2="-53.34" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="7.62" x2="-53.34" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="20.32" x2="-53.34" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="45.72" x2="43.18" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="MCP6001" gate="G$1" pin="V+"/>
 <wire x1="45.72" y1="17.78" x2="45.72" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="20.32" x2="-45.72" y2="20.32" width="0.1524" layer="91"/>
-<junction x="-45.72" y="20.32"/>
+<wire x1="45.72" y1="20.32" x2="-53.34" y2="20.32" width="0.1524" layer="91"/>
+<junction x="-53.34" y="20.32"/>
 <pinref part="SCHOTTKEY" gate="G$1" pin="1"/>
 <pinref part="APDS1" gate="G$1" pin="1"/>
 </segment>
@@ -1347,13 +1347,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="N$7" class="0">
 <segment>
-<wire x1="-30.48" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="-25.4" y1="7.62" x2="-20.32" y2="7.62" width="0.1524" layer="91"/>
-<junction x="-25.4" y="7.62"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="-25.4" y1="-2.54" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="APDS1" gate="G$1" pin="4"/>
+<pinref part="APDS1" gate="G$1" pin="6"/>
+<wire x1="-35.56" y1="7.62" x2="-25.4" y2="7.62" width="0.1524" layer="91"/>
+<junction x="-25.4" y="7.62"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -1414,11 +1414,8 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="-60.96" y="-17.78"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="-25.4" y1="-12.7" x2="-25.4" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-25.4" y1="-17.78" x2="-45.72" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-45.72" y1="-17.78" x2="-60.96" y2="-17.78" width="0.1524" layer="91"/>
-<junction x="-45.72" y="-17.78"/>
-<wire x1="-45.72" y1="7.62" x2="-45.72" y2="-17.78" width="0.1524" layer="91"/>
-<wire x1="-43.18" y1="7.62" x2="-45.72" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="-25.4" y1="-17.78" x2="-33.02" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="-17.78" x2="-60.96" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-25.4" y1="-17.78" x2="-7.62" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="-7.62" y1="-17.78" x2="-7.62" y2="-10.16" width="0.1524" layer="91"/>
@@ -1438,7 +1435,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="45.72" y="-17.78"/>
 <junction x="-7.62" y="-17.78"/>
 <junction x="-25.4" y="-17.78"/>
-<pinref part="APDS1" gate="G$1" pin="3"/>
+<pinref part="APDS1" gate="G$1" pin="4"/>
+<wire x1="-35.56" y1="2.54" x2="-33.02" y2="2.54" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="2.54" x2="-33.02" y2="-17.78" width="0.1524" layer="91"/>
+<junction x="-33.02" y="-17.78"/>
 </segment>
 </net>
 </nets>
