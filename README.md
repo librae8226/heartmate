@@ -1,4 +1,4 @@
 heartmate
 =========
 
-originally from pulse-sensor - http://pulsesensor.com/
+Originally based on pulse-sensor - http://pulsesensor.com/ .
