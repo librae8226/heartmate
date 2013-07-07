@@ -1,0 +1,27 @@
+Rough Design
+============
+
+v0.1
+----
+Brief:
+    Heartmate makes it possible for connecting heart rate sensor to the internet
+    over WiFi, a single module binding to finger or ear.
+    On the server side (cloud service), we could perform data processing and
+    give feed back to the guardians of the patients/elders.
+Issues:
+    1. Hard to make the size small enough and it could leads to high power
+    consumption because of internet connection. (fixed on v0.2)
+    2. Cannot ensure that wearing such a device all the time is comfortable.
+
+v0.2
+----
+Brief:
+    Make it connective over Bluetooth 4.0 BLE. It might significantly reduce the
+    power consumption. And the personal healthcare center could be something
+    likea watch or a phone, etc.
+    And the sensors for human body health caring/monitoring together with the
+    personal healthcare center can make up a network by Bluetooth.
+    Then the personal healthcare center connect to the internet for uploading.
+
+Issues:
+    Burndown from v0.1, cannot ensure comfortability while wearing the sensors.
